@@ -1,7 +1,13 @@
 import React from 'react';
 
+import { Navigation } from '@/components/Elements/Navigation';
+
 import styles from './Header.module.scss';
 
 export const Header = () => {
-  return <div className={styles['header']}>Header</div>;
+  return (
+    <header className={styles['header']}>
+      <Navigation />
+    </header>
+  );
 };
