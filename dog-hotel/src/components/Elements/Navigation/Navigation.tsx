@@ -9,7 +9,7 @@ export const Navigation = () => {
   const { Root, List, Item } = NavigationMenu;
 
   return (
-    <Root orientation={'horizontal'} className={styles['root']}>
+    <Root orientation={'horizontal'} className={styles['navigation']}>
       <List className={styles['list']}>
         {navigationItems.map(({ id, href, title }) => (
           <Item key={id}>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Navigation } from '@/components/Elements/Navigation';
+import { Navigation } from '@/components/Elements';
 
 import styles from './Header.module.scss';
 

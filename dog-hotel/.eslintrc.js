@@ -14,7 +14,9 @@ module.exports = {
       settings: {
         react: { version: 'detect' },
         'import/resolver': {
-          typescript: {},
+          node: {
+            paths: ['src'],
+          },
         },
       },
       env: {
