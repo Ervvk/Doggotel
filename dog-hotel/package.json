@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint-fix": "next lint -- --fix"
+    "lint-fix": "next lint -- --fix",
+    "prepare": "cd .. && husky install dog-hotel/.husky"
   },
   "dependencies": {
     "@types/node": "18.15.3",
@@ -28,10 +29,5 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-testing-library": "^5.10.2",
     "husky": "^8.0.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "next lint"
-    }
   }
 }
