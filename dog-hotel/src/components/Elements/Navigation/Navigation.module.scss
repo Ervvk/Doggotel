@@ -1,17 +1,26 @@
 .navigation {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  //width: 100vw;
   z-index: 1;
 }
 
 .list {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   list-style: none;
   padding: 1rem;
 }
 
 .link {
-  text-decoration: none;
+  @extend .link-unstyled;
+  color: var(--font-color-primary);
+  font-size: 16px;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  transition: background-color 0.3s linear;
+
+  &:hover {
+    background-color: rgb(233, 216, 216);
+  }
 }

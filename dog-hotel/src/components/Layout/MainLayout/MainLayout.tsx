@@ -1,3 +1,4 @@
+import { Inter } from 'next/font/google';
 import Head from 'next/head';
 import React from 'react';
 
@@ -8,9 +9,11 @@ import { Header } from '../Header/';
 
 import styles from './MainLayout.module.scss';
 
+const inter = Inter({ subsets: ['latin'] });
+
 export const MainLayout = ({ children }: ChildrenProps) => {
   return (
-    <div className={styles['layout']}>
+    <div className={`${styles['layout']} ${inter.className} `}>
       <Head>
         <title>Doggotel - Dogs Favorite Place</title>
         <meta name="description" content="Doggotel - Dog Hotel straight from Lodz" />

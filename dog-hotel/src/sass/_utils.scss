@@ -1,0 +1,35 @@
+.link-unstyled {
+  text-decoration: none;
+  color: black;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  @extend .flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  @extend .flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-column {
+  @extend .flex-center;
+  @extend .flex-column;
+}
+
+.flex-between {
+  @extend .flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-between-column {
+  @extend .flex-between;
+  @extend .flex-column;
+}

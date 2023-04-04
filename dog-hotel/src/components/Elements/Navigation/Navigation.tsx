@@ -2,8 +2,8 @@ import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import React from 'react';
 
 import { CustomLink } from './CustomLink';
-import { navigationItems } from './Items';
 import styles from './Navigation.module.scss';
+import { navigationItems } from './NavigationItems';
 
 export const Navigation = () => {
   const { Root, List, Item } = NavigationMenu;
