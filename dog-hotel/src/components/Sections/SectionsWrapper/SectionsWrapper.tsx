@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { RoomsSection } from '../Rooms';
 import { StrengthsSection } from '../Strengths';
 import { WelcomeSection } from '../Welcome';
 
@@ -10,6 +11,7 @@ export const SectionsWrapper = () => {
     <div className={styles['sections']}>
       <WelcomeSection />
       <StrengthsSection />
+      <RoomsSection />
     </div>
   );
 };

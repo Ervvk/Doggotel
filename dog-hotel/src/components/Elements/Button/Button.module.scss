@@ -1,16 +1,23 @@
 .button {
   @extend .flex-between-center;
   width: max-content;
-  min-width: 18rem;
+  min-width: 20rem;
+  height: 6rem;
   padding: 0.8rem 1rem;
   border: none;
   border-radius: var(--border-radius);
-  background-color: var(--button-color-primary);
-  font-size: 1.8rem;
+  font-size: 2rem;
   box-shadow: var(--shadow);
 
   &:hover {
     cursor: pointer;
+  }
+
+  &.primary {
+    background-color: var(--button-color-primary);
+  }
+  &.secondary {
+    background-color: var(--button-color-secondary);
   }
 }
 
@@ -20,6 +27,6 @@
 
 .button-icon {
   @extend .icon-rounded;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 4rem;
+  width: 4rem;
 }

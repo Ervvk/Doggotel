@@ -14,7 +14,7 @@ export const WelcomeBanner = () => {
             <h1>Doggotel</h1>
             <p className={styles['banner-detail']}>Best Dog Hotel in Poland</p>
           </div>
-          <Button title={'Book now'} icon={'/icons/icon-paw-light.svg'} />
+          <Button title={'Book now'} icon={'/icons/icon-paw-light.svg'} type={'primary'} />
         </div>
       </div>
       <div className={styles['banner-graphic']}></div>

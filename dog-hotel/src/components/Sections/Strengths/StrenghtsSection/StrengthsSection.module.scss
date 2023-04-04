@@ -6,7 +6,7 @@
   justify-content: center;
   margin: 0 auto;
   gap: var(--space-big);
-  padding: var(--space-large);
+  margin-top: var(--space-large);
   width: max-content;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

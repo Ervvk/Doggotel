@@ -1,0 +1,24 @@
+.card {
+  height: max-content;
+  padding: var(--space-big);
+}
+
+.card-content {
+  position: relative;
+  width: 100%;
+}
+
+.card-description {
+  padding: var(--space-big);
+  border-radius: var(--border-radius-small);
+  width: 50rem;
+  height: 30rem;
+  @extend .flex-center;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  right: 5rem;
+  box-shadow: var(--shadow);
+}

@@ -1,0 +1,22 @@
+.overview {
+  @extend .flex-column;
+  gap: var(--space-medium);
+}
+
+.overview-heading {
+  font-size: 2.5rem;
+}
+
+.overview-list {
+  list-style: none;
+  @extend .flex-column;
+  gap: var(--space-small);
+}
+
+.overview-list li::before {
+  content: '·';
+  font-size: 8rem;
+  vertical-align: top;
+  line-height: 1.5rem;
+  color: var(--highlight-color);
+}
