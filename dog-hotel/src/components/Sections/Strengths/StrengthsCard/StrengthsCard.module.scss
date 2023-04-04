@@ -1,0 +1,25 @@
+.card-icon {
+  @extend .icon-rounded;
+  background-color: var(--element-primary);
+  height: 8rem;
+  width: 8rem;
+  padding: var(--space-small);
+}
+
+.card {
+  width: 45rem;
+  height: 30rem;
+
+  @extend .flex-between;
+  @extend .flex-column;
+  gap: var(--space-small);
+  box-shadow: var(--shadow);
+  padding: var(--space-big);
+  border-radius: var(--border-radius-small);
+}
+
+.card-description {
+  width: 100%;
+  min-height: 8rem;
+  height: max-content;
+}

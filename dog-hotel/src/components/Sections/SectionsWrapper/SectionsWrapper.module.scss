@@ -1,0 +1,4 @@
+.sections {
+  @extend .flex-column;
+  gap: var(--space-large);
+}

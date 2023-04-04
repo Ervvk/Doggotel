@@ -1,5 +1,4 @@
-import { WelcomeSection } from '@/components/Sections/Welcome/WelcomeSection';
-
+import { SectionsWrapper } from '@/components/Sections';
 export default function Home() {
-  return <WelcomeSection />;
+  return <SectionsWrapper />;
 }
