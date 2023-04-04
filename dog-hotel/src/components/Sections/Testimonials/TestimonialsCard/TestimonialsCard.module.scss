@@ -1,0 +1,26 @@
+.card {
+  @extend .flex-column;
+  justify-content: space-between;
+  height: 22rem;
+  width: 60rem;
+  box-shadow: var(--shadow);
+  border: var(--border-solid);
+  border-radius: var(--border-radius-small);
+  padding: var(--space-big) var(--space-large);
+  position: relative;
+}
+
+.card-details {
+  @extend .flex-between;
+  color: grey;
+  &::after {
+    content: '“';
+    position: absolute;
+    left: 2rem;
+    top: 3rem;
+    font-family: Lato, sans-serif;
+    font-size: 7.5rem;
+    line-height: 6.5rem;
+    color: var(--highlight-color);
+  }
+}

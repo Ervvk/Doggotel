@@ -7,16 +7,16 @@
 }
 
 .card {
-  width: 45rem;
-  height: 30rem;
-
   @extend .flex-between;
   @extend .flex-column;
+  width: 45rem;
+  height: 30rem;
+  background-color: rgb(255, 255, 255, 0.65);
   gap: var(--space-small);
   box-shadow: var(--shadow);
   padding: var(--space-big);
   border-radius: var(--border-radius-small);
-  border: 1px solid rgb(245, 235, 235);
+  border: var(--border-solid);
 }
 
 .card-description {

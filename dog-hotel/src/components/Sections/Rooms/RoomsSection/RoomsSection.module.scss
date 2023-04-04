@@ -1,5 +1,9 @@
 .section {
   @extend .flex-center-column;
+  background-image: url('/icons/toys-blurred.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
 .section-content {

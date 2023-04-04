@@ -1,5 +1,9 @@
 .section {
   @extend .flex-center-column;
+  background-image: url('/icons/paw-blurred.svg');
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: 0% 80%;
 }
 
 .card-grid {
