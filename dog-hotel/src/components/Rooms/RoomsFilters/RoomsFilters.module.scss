@@ -1,0 +1,14 @@
+.filters-wrapper {
+  @extend .flex-column;
+  width: 32rem;
+  height: max-content;
+  padding: var(--space-big);
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius-small);
+}
+
+.filters-form {
+  @extend .flex-column;
+  gap: var(--space-medium);
+  width: 100%;
+}

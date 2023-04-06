@@ -13,6 +13,12 @@
   gap: var(--space-small);
 }
 
+.overview-list-element {
+  @extend .flex;
+  align-items: center;
+  max-width: 100%;
+}
+/*
 .overview-list li::before {
   content: '·';
   font-size: 8rem;
@@ -20,3 +26,4 @@
   line-height: 1.5rem;
   color: var(--highlight-color);
 }
+*/

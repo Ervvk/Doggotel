@@ -1,0 +1,18 @@
+.card-name {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.card {
+  @extend .flex-column;
+  border-radius: var(--border-radius-small);
+  overflow: hidden;
+  height: max-content;
+  box-shadow: var(--shadow);
+  min-width: 28rem;
+}
+
+.card-content {
+  @extend .flex-column;
+  padding: var(--space-big);
+}

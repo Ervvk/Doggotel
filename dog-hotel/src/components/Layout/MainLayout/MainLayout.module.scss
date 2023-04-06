@@ -1,5 +1,10 @@
 .layout {
-  height: 100%;
+  height: max-content;
   display: flex;
   flex-direction: column;
+}
+
+.main {
+  min-height: 90vh;
+  margin-top: 8rem;
 }

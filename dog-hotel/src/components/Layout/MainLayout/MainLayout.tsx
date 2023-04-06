@@ -21,7 +21,7 @@ export const MainLayout = ({ children }: ChildrenProps) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main>{children}</main>
+      <main className={styles['main']}>{children}</main>
       <Footer />
     </div>
   );

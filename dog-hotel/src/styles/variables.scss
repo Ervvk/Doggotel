@@ -1,12 +1,14 @@
 :root {
-  --primary-color: #0076c6;
+  --primary-color: rgb(253, 238, 238);
   --highlight-color: rgb(163, 41, 194);
   --font-color-primary: black;
   --blur: 10px;
 
   --button-color-primary: rgb(255, 254, 253);
-
   --button-color-secondary: rgb(255, 224, 247);
+  --color-hover-primary: rgb(253, 241, 255);
+  --color-hover-secondary: rgb(241, 216, 236);
+
   --element-primary: rgb(194, 134, 179);
 
   --space-small: 1rem;

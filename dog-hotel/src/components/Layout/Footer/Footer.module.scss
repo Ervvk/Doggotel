@@ -1,0 +1,22 @@
+.footer {
+  @extend .flex-column;
+  justify-content: space-between;
+  height: max-content;
+  padding: 0 var(--space-large);
+  background-color: var(--primary-color);
+  background-image: url('/icons/paws-pattern.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 35%;
+}
+
+.footer-content {
+  @extend .flex-between;
+  padding: var(--space-big);
+}
+.footer-legal {
+  @extend .flex-between;
+  background-color: var(--primary-color);
+  padding: var(--space-medium);
+  border-top: 1px solid rgb(197, 193, 193);
+}

@@ -1,0 +1,42 @@
+.root {
+  position: relative;
+  @extend .flex-center;
+  user-select: none;
+  touch-action: none;
+  width: 100%;
+  height: 20px;
+}
+
+.track {
+  background-color: rgb(225, 176, 250);
+  position: relative;
+  flex-grow: 1;
+  height: 4px;
+}
+
+.range {
+  position: absolute;
+  background-color: var(--highlight-color);
+  border-radius: 9999px;
+  height: 100%;
+}
+
+.thumb {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid rgb(226, 39, 148);
+}
+.thumb:hover {
+  background-color: var(--color-hover-primary);
+  cursor: pointer;
+}
+.thumb:focus {
+  outline: none;
+}
+
+.track:hover {
+  cursor: pointer;
+}

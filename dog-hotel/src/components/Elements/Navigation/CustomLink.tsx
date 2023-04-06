@@ -14,7 +14,7 @@ export const CustomLink = ({ href, title }: navigationProps) => {
   const isActive = router.asPath === href;
 
   return (
-    <NextLink href={href} passHref legacyBehavior>
+    <NextLink href={href} scroll passHref legacyBehavior>
       <NavigationMenu.Link className={styles['link']} active={isActive}>
         {title}
       </NavigationMenu.Link>

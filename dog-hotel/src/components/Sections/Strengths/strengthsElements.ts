@@ -15,7 +15,7 @@ export const strengthsElements = [
       path: '/icons/walk-dog.svg',
       alt: 'Dog Walk Icon',
     },
-    title: 'Daily walks',
+    title: 'Daily Walks',
     description:
       'At your request, we take your pet for a walk twice a day in a specialized closed area.',
   },
@@ -45,7 +45,8 @@ export const strengthsElements = [
       alt: 'Paw',
     },
     title: 'Dog Taxi',
-    description: 'We will come to pick up your pet anywhere in Warsaw',
+    description:
+      'We will pick up your dog from anywhere in Zabrze and the surrounding area (up to 30km)',
   },
   {
     id: 6,

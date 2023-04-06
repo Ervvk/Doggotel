@@ -1,7 +1,7 @@
 .banner {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(255, 226, 225);
+  background-color: var(--primary-color);
   height: 45rem;
   width: 100%;
 }
@@ -15,7 +15,6 @@
   background-image: url('/images/baner.jpg');
   background-size: cover;
   background-position: 50% 35%;
-
   height: 100%;
   width: 65%;
   background-repeat: no-repeat;

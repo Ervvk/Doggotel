@@ -1,0 +1,17 @@
+.address-wrapper {
+  font-style: normal;
+  color: var(--font-color-primary);
+  text-decoration: none;
+  @extend .flex-column;
+  gap: var(--space-small);
+}
+
+.addres-link {
+  @extend .link-unstyled;
+}
+
+.address-contact {
+  @extend .flex-column;
+  gap: var(--space-small);
+  margin-top: var(--space-medium);
+}

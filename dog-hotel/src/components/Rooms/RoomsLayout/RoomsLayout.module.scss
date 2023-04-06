@@ -1,0 +1,17 @@
+.rooms {
+  @extend .flex-center-column;
+  margin-top: var(--space-big);
+}
+
+.rooms-content {
+  padding: var(--space-large);
+  @extend .flex;
+  align-items: flex-start;
+  gap: var(--space-large);
+}
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-big);
+}

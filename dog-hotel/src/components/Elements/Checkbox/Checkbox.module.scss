@@ -1,0 +1,35 @@
+.checkbox-wrapper {
+  @extend .flex;
+  align-items: center;
+}
+
+.checkbox-root {
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border: 1px solid var(--highlight-color);
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--color-hover-primary);
+  }
+  &:focus {
+    box-shadow: 0 0 0 2px rgb(199, 186, 186);
+  }
+}
+
+.checkbox-label {
+  padding-left: var(--space-small);
+  font-size: 1.6rem;
+  line-height: 1;
+  user-select: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

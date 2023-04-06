@@ -1,12 +1,11 @@
 .button {
   @extend .flex-between-center;
-  width: max-content;
-  min-width: 20rem;
+  width: 100%;
   height: 6rem;
-  padding: 0.8rem 1rem;
-  border: none;
+  padding: 1rem var(--space-small);
+  border: var(--border-solid);
   border-radius: var(--border-radius);
-  font-size: 2rem;
+  font-size: 1.9rem;
   box-shadow: var(--shadow);
 
   &:hover {
@@ -15,18 +14,32 @@
 
   &.primary {
     background-color: var(--button-color-primary);
+    border: 1px solid var(--element-primary);
+    &:hover {
+      background-color: var(--color-hover-primary);
+    }
   }
+
   &.secondary {
     background-color: var(--button-color-secondary);
+    &:hover {
+      background-color: var(--color-hover-secondary);
+    }
   }
-}
-
-.button-title {
-  margin-left: var(--space-medium);
 }
 
 .button-icon {
   @extend .icon-rounded;
-  height: 4rem;
-  width: 4rem;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.button-title {
+  padding: var(--space-small);
+  margin: 0 auto;
+}
+
+.small {
+  height: 5rem;
+  font-size: 1.8rem;
 }
