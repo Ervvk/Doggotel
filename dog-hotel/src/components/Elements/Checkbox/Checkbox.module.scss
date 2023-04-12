@@ -33,3 +33,8 @@
     cursor: pointer;
   }
 }
+
+.checkbox-group {
+  @extend .flex-column;
+  gap: var(--space-small);
+}

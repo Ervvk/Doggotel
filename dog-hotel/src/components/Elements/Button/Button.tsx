@@ -7,11 +7,12 @@ type ButtonProps = {
   title?: string;
   icon?: string;
   type: 'primary' | 'secondary';
+  onClick?: () => void;
 };
 
-export const Button = ({ title, icon, type }: ButtonProps) => {
+export const Button = ({ title, icon, type, onClick }: ButtonProps) => {
   return (
-    <ButtonUnstyled className={` ${styles['button']} ${styles[`${type}`]}`}>
+    <ButtonUnstyled onClick={onClick} className={` ${styles['button']} ${styles[`${type}`]}`}>
       <span></span>
       {!!title && <span className={styles['button-title']}>{title}</span>}
       {!!icon && (

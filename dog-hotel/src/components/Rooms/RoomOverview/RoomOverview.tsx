@@ -1,23 +1,41 @@
+import Link from 'next/link';
 import React from 'react';
 
-import { Button } from '@/components/Elements';
+import { BookingButton } from '@/components/Booking';
 
 import { FurnishingsWidget } from '../FurnishingsWidget';
+import { Furnishings } from '../roomsTypes';
 
 import styles from './RoomOverview.module.scss';
 
-export const RoomOverview = ({ furnishings, price, name, capacity }: any) => {
+type RoomOverviewProps = {
+  id: number;
+  furnishings: Furnishings;
+  price: number;
+  name: string;
+  recommendedFor: string;
+};
+
+export const RoomOverview = ({
+  furnishings,
+  price,
+  name,
+  recommendedFor,
+  id,
+}: RoomOverviewProps) => {
   return (
     <div className={styles['overview']}>
-      <h3 className={styles['overview-heading']}>{name}</h3>
+      <Link className={styles['overview-heading']} href={`/room/${id}`}>
+        <h3>{name}</h3>
+      </Link>
       <ul className={styles['overview-list']}>
-        <li>Best choice - {capacity}</li>
+        <li>Best choice - {recommendedFor}</li>
         <li>Price per day - {price}$</li>
         <li className={styles['overview-list-element']}>
           Furnishings - <FurnishingsWidget furnishings={furnishings} />
         </li>
       </ul>
-      <Button title={'Book now'} icon={'/icons/icon-paw-light.svg'} type={'secondary'} />
+      <BookingButton />
     </div>
   );
 };

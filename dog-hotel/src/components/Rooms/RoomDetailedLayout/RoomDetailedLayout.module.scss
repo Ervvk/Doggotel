@@ -1,0 +1,32 @@
+.layout {
+  @extend .flex-center-column;
+  gap: var(--space-large);
+  padding: var(--space-large);
+  margin-top: var(--space-big);
+}
+
+.room {
+  @extend .flex-center;
+  align-items: flex-start;
+  gap: var(--space-large);
+}
+
+.room-details {
+  @extend .flex-column;
+  gap: var(--space-medium);
+}
+
+.room-widgets {
+  @extend .flex;
+}
+
+.room-details-price {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--highlight-color);
+}
+
+.room-description {
+  width: 50rem;
+  margin: var(--space-small) 0;
+}

@@ -1,6 +1,7 @@
 .button {
   @extend .flex-between-center;
   width: 100%;
+  max-width: 40rem;
   height: 6rem;
   padding: 1rem var(--space-small);
   border: var(--border-solid);

@@ -1,0 +1,21 @@
+.images-minimized {
+  @extend .flex;
+  gap: var(--space-small);
+}
+
+.image-wrapper {
+  overflow: hidden;
+  border-radius: var(--border-radius-small);
+}
+
+.image-small {
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+.gallery {
+  @extend .flex-column;
+  gap: var(--space-small);
+}

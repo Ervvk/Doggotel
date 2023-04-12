@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "name": "Economy Box",
+    "type": "Box",
+    "furnishings": {
+      "bed": false,
+      "blanket": true,
+      "toys": false
+    },
+    "price": 20,
+    "images": "images/box1",
+    "description": " This Box is equipped with a soft and clean blanket for your dog to rest on. There is also a water bowl and food dish provided for your dog's convenience. The box is located in the climate-controlled space, ensuring your dog is comfortable no matter the weather outside. Perfect for small dogs.",
+    "recommendedFor": "Small dogs",
+    "dogSizes": {
+      "small": true,
+      "medium": false,
+      "big": false
+    }
+  },
+  {
+    "id": 2,
+    "name": "Standard Box",
+    "type": "Box",
+    "furnishings": {
+      "bed": false,
+      "blanket": true,
+      "toys": false
+    },
+    "dogSizes": {
+      "small": true,
+      "medium": true,
+      "big": false
+    },
+    "price": 25,
+    "images": "images/box2",
+    "description": " This box is equipped with a soft and clean bed for your dog to rest on. There is also a water bowl and food dish provided for your dog's convenience. The box is located in the climate-controlled space, ensuring your dog is comfortable no matter the weather outside. Perfect for small and medium sized dogs.",
+    "recommendedFor": "Medium dogs"
+  },
+  {
+    "id": 3,
+    "name": "Big Box",
+    "type": "Box",
+    "furnishings": {
+      "bed": false,
+      "blanket": true,
+      "toys": false
+    },
+    "dogSizes": {
+      "small": false,
+      "medium": true,
+      "big": true
+    },
+    "price": 30,
+    "images": "images/box3",
+    "description": " This box is equipped with a soft and clean bed for your dog to rest on. There is also a water bowl and food dish provided for your dog's convenience. The box is located in the climate-controlled space, ensuring your dog is comfortable no matter the weather outside. Perfect for big dogs.",
+    "recommendedFor": "Big dogs"
+  },
+  {
+    "id": 4,
+    "name": "Comfort Room",
+    "type": "room",
+    "furnishings": {
+      "bed": true,
+      "blanket": true,
+      "toys": false
+    },
+    "dogSizes": {
+      "small": true,
+      "medium": true,
+      "big": true
+    },
+    "price": 40,
+    "images": "images/room1",
+    "description": " The room is equipped with a soft and clean bed for your dog to rest on. There is also a water bowl and food dish provided for your dog's convenience. The room is climate-controlled, ensuring your dog is comfortable no matter the weather outside. Our staff is trained to provide the highest level of care and attention to your dog during their stay in our hotel room.",
+    "recommendedFor": "All dogs"
+  },
+  {
+    "id": 5,
+    "name": "Premium Room",
+    "type": "room",
+    "furnishings": {
+      "bed": true,
+      "blanket": true,
+      "toys": true
+    },
+    "dogSizes": {
+      "small": true,
+      "medium": true,
+      "big": true
+    },
+    "price": 70,
+    "images": "images/room2",
+    "description": " The room is equipped with a soft and clean bed for your dog to rest on, as well as plenty of toys and treats to keep them entertained. There is also a water bowl and food dish provided for your dog's convenience. The room is climate-controlled, ensuring your dog is comfortable no matter the weather outside. This is our largest room, all equipment quality is top-notch.",
+    "recommendedFor": "All dogs"
+  },
+  {
+    "id": 6,
+    "name": "Chill Room",
+    "type": "room",
+    "furnishings": {
+      "bed": true,
+      "blanket": true,
+      "toys": true
+    },
+    "dogSizes": {
+      "small": true,
+      "medium": true,
+      "big": true
+    },
+    "price": 60,
+    "images": "images/room3",
+    "description": "The room is specially adapted for dogs that need peace. The walls are additionally soundproofed, anti-stress toys are provided. The room is equipped with a soft and clean bed for your dog to rest on. There is also a water bowl and food dish provided for your dog's convenience. The room is climate-controlled, ensuring your dog is comfortable no matter the weather outside.",
+    "recommendedFor": "Stressed dogs"
+  }
+]

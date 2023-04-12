@@ -1,14 +1,19 @@
 import * as RadixSlider from '@radix-ui/react-slider';
-import React, { useState } from 'react';
+import React from 'react';
 
 import styles from './Slider.module.scss';
 
-export const Slider = () => {
+type SliderProps = {
+  defaultValue: number[];
+  currentValue: number[];
+  onSliderChange: (value: number[]) => void;
+};
+
+export const Slider = ({ onSliderChange, defaultValue, currentValue }: SliderProps) => {
   const { Root, Track, Range, Thumb } = RadixSlider;
-  const [sliderValue, setSliderValue] = useState([50]);
 
   const handleSliderChange = (value: number[]) => {
-    setSliderValue(value);
+    onSliderChange(value);
   };
 
   return (
@@ -16,7 +21,8 @@ export const Slider = () => {
       <Root
         onValueChange={(value) => handleSliderChange(value)}
         className={styles['root']}
-        defaultValue={sliderValue}
+        defaultValue={defaultValue}
+        value={currentValue}
         max={100}
         step={1}
         aria-label="Volume"
@@ -26,7 +32,7 @@ export const Slider = () => {
         </Track>
         <Thumb className={styles['thumb']} />
       </Root>
-      <span>{sliderValue} $</span>
+      <span>{currentValue} $</span>
     </div>
   );
 };

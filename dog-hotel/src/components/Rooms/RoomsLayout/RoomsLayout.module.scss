@@ -12,6 +12,9 @@
 
 .rooms-grid {
   display: grid;
+  justify-content: center;
+
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-big);
+  width: 98rem;
 }

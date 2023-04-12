@@ -2,24 +2,28 @@ import Image from 'next/image';
 import React from 'react';
 
 import { RoomOverview } from '../RoomOverview';
-import { Furnishings } from '../roomsElements';
+import { Furnishings } from '../roomsTypes';
+import { composeImagePath } from '../roomsUtils';
 
 import styles from './RoomsCard.module.scss';
 
 type RoomsCardProps = {
-  images: string[];
+  id: number;
+  images: string;
   furnishings: Furnishings;
   price: number;
-  capacity: string;
+  recommendedFor: string;
   name: string;
 };
 
 const RoomsCard = (props: RoomsCardProps) => {
+  const imagePath = composeImagePath(props.images, 1);
+
   return (
     <div className={styles['card']}>
       <div>
         <Image
-          src={props.images[0]}
+          src={imagePath}
           alt={props.name}
           width={310}
           height={220}
@@ -27,7 +31,13 @@ const RoomsCard = (props: RoomsCardProps) => {
         />
       </div>
       <div className={styles['card-content']}>
-        <RoomOverview {...props} />
+        <RoomOverview
+          furnishings={props.furnishings}
+          price={props.price}
+          name={props.name}
+          recommendedFor={props.recommendedFor}
+          id={props.id}
+        />
       </div>
     </div>
   );

@@ -1,0 +1,11 @@
+.placeholder {
+  @extend .flex-center-column;
+  justify-self: center;
+  grid-column: span 2;
+  gap: var(--space-medium);
+}
+
+.placeholder-title {
+  font-size: 2rem;
+  color: var(--element-primary);
+}

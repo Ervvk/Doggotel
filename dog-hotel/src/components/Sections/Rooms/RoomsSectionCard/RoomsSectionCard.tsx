@@ -3,6 +3,7 @@ import React from 'react';
 
 import { RoomOverview } from '@/components/Rooms/RoomOverview';
 import { roomsElements } from '@/components/Rooms/roomsElements';
+import { composeImagePath } from '@/components/Rooms/roomsUtils';
 
 import styles from './RoomsSectionCard.module.scss';
 
@@ -11,7 +12,7 @@ const RoomsSectionCard = () => {
     <div className={styles['card']}>
       <div className={styles['card-content']}>
         <Image
-          src={roomsElements[0].images[0]}
+          src={composeImagePath(roomsElements[0].images, 1)}
           alt="Basic Room Photo"
           width={800}
           height={500}

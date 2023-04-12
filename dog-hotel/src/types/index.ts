@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 export interface BaseEntity {
-  id: string;
+  id: number;
 }
 
 export interface ChildrenProps {
