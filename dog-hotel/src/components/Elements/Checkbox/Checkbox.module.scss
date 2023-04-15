@@ -4,15 +4,13 @@
 }
 
 .checkbox-root {
-  background-color: white;
+  @extend .flex-center;
   width: 25px;
   height: 25px;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border: none;
-  border: 1px solid var(--highlight-color);
+  border: 1px solid var(--color-highlight);
+  background-color: var(--color-element-light);
 
   &:hover {
     cursor: pointer;

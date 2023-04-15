@@ -14,15 +14,15 @@
   }
 
   &.primary {
-    background-color: var(--button-color-primary);
-    border: 1px solid var(--element-primary);
+    background-color: var(--color-button-primary);
+    border: 1px solid var(--color-element-primary);
     &:hover {
       background-color: var(--color-hover-primary);
     }
   }
 
   &.secondary {
-    background-color: var(--button-color-secondary);
+    background-color: var(--color-button-secondary);
     &:hover {
       background-color: var(--color-hover-secondary);
     }
@@ -31,6 +31,7 @@
 
 .button-icon {
   @extend .icon-rounded;
+  background-color: var(--color-element-primary);
   height: 3.5rem;
   width: 3.5rem;
 }

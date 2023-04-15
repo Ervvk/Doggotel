@@ -1,13 +1,13 @@
 .newsletter {
   @extend .flex-center-column;
-  height: min-content;
   gap: var(--space-small);
+  height: min-content;
 }
 
 .newsletter-form {
   @extend .flex;
-  background-color: rgb(233, 217, 217);
-  border-radius: var(--border-radius);
   padding: var(--space-medium);
   gap: var(--space-small);
+  border-radius: var(--border-radius);
+  background-color: var(--color-element-dark);
 }

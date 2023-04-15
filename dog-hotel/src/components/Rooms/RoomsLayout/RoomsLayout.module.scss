@@ -4,9 +4,9 @@
 }
 
 .rooms-content {
-  padding: var(--space-large);
   @extend .flex;
   align-items: flex-start;
+  padding: var(--space-large);
   gap: var(--space-large);
 }
 

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
+<desc>Created with Fabric.js 5.2.4</desc>
+<defs>
+</defs>
+<g transform="matrix(1 0 0 1 540 540)" id="4570de07-f637-4ca0-994f-767c5c445d1d"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
+</g>
+<g transform="matrix(1 0 0 1 540 540)" id="f251f0cd-c321-4adf-99fe-5e709c9d26ae"  >
+</g>
+<g transform="matrix(2 0 0 2 546.95 566.35)"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(144,22,158); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-350, -280)" d="M 350 28 C 211.12 28 98 141.12 98 280 C 98 418.88 211.12 532 350 532 C 488.88 532 602 418.88 602 280 C 602 141.12 488.88 28 350 28 z M 350 476 C 241.92000000000002 476 154 388.078 154 280 C 154 171.92200000000003 241.922 84 350 84 C 458.078 84 546 171.922 546 280 C 546 388.078 458.078 476 350 476 z" stroke-linecap="round" />
+</g>
+<g transform="matrix(2 0 0 2 540 567.67)"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(135,23,147); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-350, -280)" d="M 322 296.24 L 266 240.24 L 226.238 280.002 L 322 375.764 L 473.76 224.00400000000002 L 433.998 184.24200000000002 z" stroke-linecap="round" />
+</g>
+</svg>

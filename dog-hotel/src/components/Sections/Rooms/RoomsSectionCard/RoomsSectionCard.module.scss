@@ -9,16 +9,16 @@
 }
 
 .card-description {
+  @extend .flex-center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5rem;
   padding: var(--space-big);
   border-radius: var(--border-radius-small);
   width: 50rem;
   height: 30rem;
-  @extend .flex-center;
-  background-color: white;
-  position: absolute;
-  top: 0;
-  bottom: 0;
+  background-color: var(--color-element-light);
   margin: auto 0;
-  right: 5rem;
   box-shadow: var(--shadow);
 }

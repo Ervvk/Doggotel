@@ -6,7 +6,7 @@
 }
 
 .widget {
-  padding-left: var(--space-small);
   @extend .flex-center;
+  padding-left: var(--space-small);
   gap: var(--space-small);
 }

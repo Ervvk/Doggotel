@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-import { BookingButton } from '@/components/Booking';
+import { BookingTrigger } from '@/components/Booking';
 
 import { FurnishingsWidget } from '../FurnishingsWidget';
 import { Furnishings } from '../roomsTypes';
@@ -35,7 +35,7 @@ export const RoomOverview = ({
           Furnishings - <FurnishingsWidget furnishings={furnishings} />
         </li>
       </ul>
-      <BookingButton />
+      <BookingTrigger roomName={name} />
     </div>
   );
 };

@@ -1,0 +1,15 @@
+.dialog-content {
+  @extend .flex-column;
+  gap: var(--space-big);
+  padding: var(--space-large) var(--space-big);
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.dog-name {
+  font-weight: 700;
+}
+
+.confirmation-paragraph {
+  margin-top: var(--space-small);
+}

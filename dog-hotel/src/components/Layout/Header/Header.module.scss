@@ -1,11 +1,9 @@
 .header {
-  height: 8rem;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-  padding: 1rem 20%;
+  @extend .flex-between-center;
   position: fixed;
-  background-color: white;
+  height: 8rem;
+  width: 100%;
+  padding: 1rem 20%;
+  background-color: var(--color-element-light);
   z-index: 1000;
 }

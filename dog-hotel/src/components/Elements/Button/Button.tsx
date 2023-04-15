@@ -7,12 +7,19 @@ type ButtonProps = {
   title?: string;
   icon?: string;
   type: 'primary' | 'secondary';
+  submit?: boolean;
+  formId?: string;
   onClick?: () => void;
 };
 
-export const Button = ({ title, icon, type, onClick }: ButtonProps) => {
+export const Button = ({ title, icon, type, onClick, submit, formId }: ButtonProps) => {
   return (
-    <ButtonUnstyled onClick={onClick} className={` ${styles['button']} ${styles[`${type}`]}`}>
+    <ButtonUnstyled
+      onClick={onClick}
+      className={` ${styles['button']} ${styles[`${type}`]}`}
+      type={submit ? 'submit' : 'button'}
+      form={formId}
+    >
       <span></span>
       {!!title && <span className={styles['button-title']}>{title}</span>}
       {!!icon && (

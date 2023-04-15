@@ -1,9 +1,8 @@
 .address-wrapper {
-  font-style: normal;
-  color: var(--font-color-primary);
-  text-decoration: none;
   @extend .flex-column;
   gap: var(--space-small);
+  font-style: normal;
+  text-decoration: none;
 }
 
 .addres-link {

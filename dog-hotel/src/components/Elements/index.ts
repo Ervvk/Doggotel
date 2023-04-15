@@ -5,4 +5,5 @@ export * from './InputText';
 export * from './Checkbox';
 export * from './Slider';
 export * from './Select';
+export * from './Dialog';
 export * from './EmptyGridPlaceholder';
