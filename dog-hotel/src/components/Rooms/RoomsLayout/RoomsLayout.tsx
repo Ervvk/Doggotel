@@ -1,6 +1,6 @@
 import React, { Fragment, useCallback, useState } from 'react';
 
-import { EmptyGridPlaceholder } from '@/components/Elements';
+import { Placeholder } from '@/components/Elements';
 
 import RoomsCard from '../RoomsCard/RoomsCard';
 import { RoomsFilters } from '../RoomsFilters';
@@ -75,7 +75,7 @@ export const RoomsLayout = ({ roomsData }: RoomsLayoutProps) => {
               </Fragment>
             ))
           ) : (
-            <EmptyGridPlaceholder title="No Rooms Match Filters" />
+            <Placeholder title="No Rooms Match Filters" />
           )}
         </div>
       </div>

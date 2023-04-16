@@ -22,4 +22,7 @@
   &:hover {
     background-color: var(--color-hover-secondary);
   }
+  &-selected {
+    background-color: var(--color-hover-secondary);
+  }
 }

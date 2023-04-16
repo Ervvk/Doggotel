@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 import { Button } from '@/components/Elements';
@@ -14,7 +15,9 @@ export const WelcomeBanner = () => {
             <h1>Doggotel</h1>
             <p className={styles['banner-detail']}>Best Dog Hotel in Poland</p>
           </div>
-          <Button title={'Browse rooms'} icon={'/icons/icon-paw-light.svg'} type={'primary'} />
+          <Link href={'/rooms'} role="button" className={styles['banner-link']}>
+            <Button title={'Browse rooms'} icon={'/icons/icon-paw-light.svg'} type={'primary'} />
+          </Link>
         </div>
       </div>
       <div className={styles['banner-graphic']}></div>

@@ -4,10 +4,14 @@
   height: min-content;
 }
 
-.newsletter-form {
-  @extend .flex;
-  padding: var(--space-medium);
-  gap: var(--space-small);
+.newsletter-content {
   border-radius: var(--border-radius);
   background-color: var(--color-element-dark);
+
+  padding: var(--space-medium);
+}
+
+.newsletter-form {
+  @extend .flex-center;
+  gap: var(--space-small);
 }

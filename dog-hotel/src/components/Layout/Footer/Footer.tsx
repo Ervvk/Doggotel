@@ -15,7 +15,7 @@ export const Footer = () => {
         <Logo />
       </div>
       <div className={styles['footer-legal']}>
-        <p> © This website was designed and created by Eryk Baranowski.</p>
+        <p> © This website was created by Eryk Baranowski</p>
         <p>
           <span>
             {' '}
