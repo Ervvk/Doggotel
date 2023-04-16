@@ -10,15 +10,20 @@ import { bookingValidation, composeFormData, defaultBookingDetails } from '../bo
 import styles from './BookingForm.module.scss';
 
 type BookingFormProps = {
+  roomName: string;
   handleDialogClose: () => void;
   handleValueChange: (bookingDetails: BookingDetails) => void;
 };
 
-export const BookingForm = ({ handleDialogClose, handleValueChange }: BookingFormProps) => {
+export const BookingForm = ({
+  handleDialogClose,
+  handleValueChange,
+  roomName,
+}: BookingFormProps) => {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const formData = composeFormData(new FormData(event.currentTarget));
-    const formDataTyped = { ...defaultBookingDetails, ...formData };
+    const formDataTyped = { ...defaultBookingDetails, ...formData, roomName };
 
     handleDialogClose();
     handleValueChange(formDataTyped);

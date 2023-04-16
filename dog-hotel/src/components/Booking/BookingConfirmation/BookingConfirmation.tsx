@@ -23,7 +23,7 @@ export const BookingConfirmation = ({
     <Dialog isOpen={isDialogOpen} onClose={onClose} onOpen={onOpen} title={'Confirmation'}>
       <div className={styles['dialog-content']}>
         <p className={styles['confirmation-paragraph']}>
-          Thank you for your interest in our offer!
+          Thank you for your interest in our <b>{bookingDetails?.roomName}</b> offer!
         </p>
         <p className={styles['confirmation-paragraph']}>
           Our staff will contact you to arrange the details.

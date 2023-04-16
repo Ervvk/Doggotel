@@ -23,6 +23,7 @@ export const bookingValidation = {
 };
 
 export const defaultBookingDetails = {
+  roomName: '',
   startDate: '',
   endDate: '',
   email: '',

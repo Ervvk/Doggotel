@@ -1,0 +1,10 @@
+.contact {
+  @extend .flex-center-column;
+  margin-top: var(--space-medium);
+  gap: var(--space-large);
+}
+
+.contact-content {
+  @extend .flex-center;
+  gap: var(--space-large);
+}

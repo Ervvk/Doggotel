@@ -56,6 +56,12 @@ module.exports = {
         'import/no-named-as-default': 'off',
 
         'react/react-in-jsx-scope': 'off',
+        'react/no-unknown-property': [
+          2,
+          {
+            ignore: ['jsx', 'global'],
+          },
+        ],
 
         'jsx-a11y/anchor-is-valid': 'off',
 

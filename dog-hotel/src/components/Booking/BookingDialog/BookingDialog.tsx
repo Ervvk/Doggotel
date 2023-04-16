@@ -25,7 +25,11 @@ export const BookingDialog = ({
   return (
     <Dialog isOpen={isDialogOpen} onClose={onClose} onOpen={onOpen} title={`Book the ${roomName}`}>
       <div className={styles['dialog-content']}>
-        <BookingForm handleDialogClose={onClose} handleValueChange={onValueChange} />
+        <BookingForm
+          handleDialogClose={onClose}
+          handleValueChange={onValueChange}
+          roomName={roomName}
+        />
       </div>
     </Dialog>
   );

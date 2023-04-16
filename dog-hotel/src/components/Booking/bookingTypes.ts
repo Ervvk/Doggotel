@@ -4,4 +4,5 @@ export interface BookingDetails {
   email: string;
   phoneNumber: string;
   dogName: string;
+  roomName: string;
 }

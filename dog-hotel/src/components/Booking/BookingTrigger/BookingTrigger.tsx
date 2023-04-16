@@ -16,9 +16,9 @@ type BookingTriggerProps = {
 };
 
 export const BookingTrigger = ({ roomName }: BookingTriggerProps) => {
-  const [isDialogOpen, setDialogOpen] = useState(false);
+  const [isDialogOpen, setDialogOpen] = useState<boolean>(false);
   const [bookingDetails, setBookingDetails] = useState<BookingDetails>(defaultBookingDetails);
-  const [isConfirmationOpen, setConfirmationOpen] = useState(false);
+  const [isConfirmationOpen, setConfirmationOpen] = useState<boolean>(false);
 
   const openBookingDialog = () => {
     setDialogOpen((prev) => !prev);
