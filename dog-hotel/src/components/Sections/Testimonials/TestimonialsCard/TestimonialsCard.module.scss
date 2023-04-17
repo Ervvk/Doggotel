@@ -8,6 +8,12 @@
   border-radius: var(--border-radius-small);
   padding: var(--space-big) var(--space-large);
   position: relative;
+  @include setBreakpoint(1050px) {
+    width: 45vw;
+  }
+  @include setBreakpoint(850px) {
+    width: 90vw;
+  }
 }
 
 .card-details {

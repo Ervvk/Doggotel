@@ -1,3 +1,5 @@
+$layout-break-1: 900px;
+
 .footer {
   @extend .flex-column;
   justify-content: space-between;
@@ -8,15 +10,32 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 35%;
+
+  @include setBreakpoint($layout-break-1) {
+    background-position: 0 -10%;
+  }
 }
 
 .footer-content {
   @extend .flex-between;
   padding: var(--space-big);
+
+  @include setBreakpoint(900px) {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-big);
+  }
 }
 .footer-legal {
   @extend .flex-between;
   background-color: var(--color-primary);
   padding: var(--space-medium);
   border-top: 1px solid rgb(197, 193, 193);
+
+  @include setBreakpoint($layout-break-1) {
+    padding: var(--space-small);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-small);
+  }
 }

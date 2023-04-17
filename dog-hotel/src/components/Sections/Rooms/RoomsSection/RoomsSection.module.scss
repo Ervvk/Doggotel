@@ -4,11 +4,26 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top right;
+  @include setBreakpoint(950px) {
+    background-size: 50%;
+    background-position: 110% 0%;
+  }
 }
 
 .section-content {
   width: 100%;
   padding: 0 15%;
+
+  @include setBreakpoint(1400px) {
+    padding: 0 var(--space-small);
+  }
+  @include setBreakpoint(950px) {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-big);
+  }
 }
 
 .section-icon {
@@ -21,4 +36,20 @@
 .section-link {
   font-size: 2rem;
   margin-left: var(--space-small);
+}
+
+.section-card {
+  &-big {
+    display: block;
+    @include setBreakpoint(950px) {
+      display: none;
+    }
+  }
+
+  &-small {
+    display: none;
+    @include setBreakpoint(950px) {
+      display: block;
+    }
+  }
 }

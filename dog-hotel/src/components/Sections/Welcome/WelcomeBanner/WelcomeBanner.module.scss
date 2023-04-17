@@ -1,29 +1,43 @@
+$layout-break-1: 660px;
+
 .banner {
   display: flex;
   justify-content: space-between;
   background-color: var(--color-primary);
   height: 45rem;
   width: 100%;
+  @include setBreakpoint($layout-break-1) {
+    height: max-content;
+    flex-direction: column;
+  }
 }
 
 .banner-graphic {
-  justify-content: flex-start;
-  align-items: center;
-  min-height: 45rem;
+  @extend .flex-column;
+  justify-content: flex-end;
+  height: 45rem;
   min-width: 40rem;
-  background-color: rgb(255, 226, 225);
   background-image: url('/images/baner.jpg');
   background-size: cover;
   background-position: 80% 35%;
   height: 100%;
   width: 65%;
   background-repeat: no-repeat;
+
+  @include setBreakpoint($layout-break-1) {
+    width: 100%;
+    height: 40rem;
+    background-position: 80% 45%;
+  }
 }
 
 .banner-content {
   @extend .flex-center-column;
   width: 50%;
   height: 100%;
+  @include setBreakpoint($layout-break-1) {
+    width: 100%;
+  }
 }
 
 .banner-heading {
@@ -31,6 +45,14 @@
   align-items: flex-start;
   gap: var(--space-big);
   padding: var(--space-small);
+  @include setBreakpoint($layout-break-1) {
+    align-items: center;
+    padding: var(--space-medium);
+  }
+}
+
+.banner-heading-elements {
+  transform: translateY(-1.4rem);
 }
 
 .banner-detail {
@@ -40,4 +62,18 @@
 
 .banner-link {
   @extend .link-unstyled;
+
+  @include setBreakpoint($layout-break-1) {
+    width: 25rem;
+  }
+}
+
+.container {
+  display: none;
+  transform: rotate(180deg) translateY(-5px);
+  background-color: transparent;
+
+  @include setBreakpoint($layout-break-1) {
+    display: flex;
+  }
 }

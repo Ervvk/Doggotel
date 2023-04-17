@@ -7,11 +7,19 @@
 }
 
 .card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
+  width: max-content;
   margin: 0 auto;
   gap: var(--space-big);
   margin-top: var(--space-large);
-  width: max-content;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+
+  @include setBreakpoint(1400px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include setBreakpoint(850px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

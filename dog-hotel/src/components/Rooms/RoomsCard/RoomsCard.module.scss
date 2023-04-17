@@ -9,7 +9,9 @@
   overflow: hidden;
   height: max-content;
   box-shadow: var(--shadow);
-  min-width: 28rem;
+  background-color: var(--color-element-light);
+  max-width: 35rem;
+  width: 95vw;
 }
 
 .card-content {

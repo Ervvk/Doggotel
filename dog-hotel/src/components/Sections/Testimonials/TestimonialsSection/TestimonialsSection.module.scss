@@ -7,4 +7,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space-big);
   padding: var(--space-large);
+  @include setBreakpoint(850px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

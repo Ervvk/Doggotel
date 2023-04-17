@@ -1,3 +1,6 @@
 .section {
   padding: 0 8vw;
+  @include setBreakpoint(650px) {
+    padding: 0;
+  }
 }

@@ -7,8 +7,8 @@
 .newsletter-content {
   border-radius: var(--border-radius);
   background-color: var(--color-element-dark);
-
   padding: var(--space-medium);
+  max-width: 98vw;
 }
 
 .newsletter-form {

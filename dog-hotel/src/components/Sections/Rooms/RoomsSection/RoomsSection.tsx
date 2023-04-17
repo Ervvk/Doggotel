@@ -1,16 +1,26 @@
 import Link from 'next/link';
 import React from 'react';
 
+import RoomsCard from '@/components/Rooms/RoomsCard/RoomsCard';
+import { Room } from '@/components/Rooms/roomsTypes';
+import { randomNumber } from '@/helpers/utils';
+
 import RoomsSectionCard from '../RoomsSectionCard/RoomsSectionCard';
 
 import styles from './RoomsSection.module.scss';
 
-export const RoomsSection = () => {
+type RoomsSectionProps = {
+  rooms: Room[];
+};
+
+export const RoomsSection = ({ rooms }: RoomsSectionProps) => {
+  const activeRoomIndex = randomNumber(1, rooms.length - 1);
+
   return (
     <section className={styles['section']}>
       <h2>Our Rooms</h2>
       <div className={styles['section-content']}>
-        <span>
+        <span className={styles['section-icon-link']}>
           <span className={styles['section-icon']}>
             <img src="/icons/arrow-curved.svg" alt="Curved Arrow" />
           </span>
@@ -18,7 +28,14 @@ export const RoomsSection = () => {
             View More Rooms
           </Link>
         </span>
-        <RoomsSectionCard />
+        <div className={styles['section-card-big']}>
+          <RoomsSectionCard activeRoom={rooms[activeRoomIndex]} />
+        </div>
+        <div className={styles['section-card-small']}>
+          <RoomsCard {...rooms[activeRoomIndex]} />
+        </div>
+        {/*
+        <RoomsCard {...rooms[activeRoom]} /> */}
       </div>
     </section>
   );
