@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Furnishings } from '../roomsTypes';
+import { Furnishings } from '../types';
 
 import styles from './FurnishingsWidget.module.scss';
 

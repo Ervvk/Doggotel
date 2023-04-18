@@ -3,7 +3,7 @@ import React from 'react';
 import { Dialog, DialogProps } from '@/components/Elements';
 
 import { BookingForm } from '../BookingForm';
-import { BookingDetails } from '../bookingTypes';
+import { BookingDetails } from '../types';
 
 import styles from './BookingDialog.module.scss';
 

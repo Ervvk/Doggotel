@@ -4,7 +4,7 @@ import React from 'react';
 import { BookingTrigger } from '@/components/Booking';
 
 import { FurnishingsWidget } from '../FurnishingsWidget';
-import { Furnishings } from '../roomsTypes';
+import { Furnishings } from '../types';
 
 import styles from './RoomOverview.module.scss';
 

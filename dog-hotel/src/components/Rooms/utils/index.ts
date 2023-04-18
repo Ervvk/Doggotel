@@ -1,4 +1,4 @@
-import { Room, RoomsFilters } from './roomsTypes';
+import { Room, RoomsFilters } from '../types';
 
 export const composeImagePath = (directoryPath: string, imageNumber: number) =>
   `/${directoryPath}/dog-${imageNumber}.jpg`;

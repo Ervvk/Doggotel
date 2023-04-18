@@ -5,8 +5,8 @@ import { delay } from '@/helpers/utils';
 
 import { BookingConfirmation } from '../BookingConfirmation';
 import { BookingDialog } from '../BookingDialog';
-import { BookingDetails } from '../bookingTypes';
-import { defaultBookingDetails } from '../bookingUtils';
+import { BookingDetails } from '../types';
+import { defaultBookingDetails } from '../utils';
 
 //The number of ms after which the booking confirmation will be opened
 const confirmationDelay = 300;

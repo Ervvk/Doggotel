@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
 import RoomsCard from '@/components/Rooms/RoomsCard/RoomsCard';
-import { Room } from '@/components/Rooms/roomsTypes';
+import { Room } from '@/components/Rooms/types';
 import { randomNumber } from '@/helpers/utils';
 
 import RoomsSectionCard from '../RoomsSectionCard/RoomsSectionCard';

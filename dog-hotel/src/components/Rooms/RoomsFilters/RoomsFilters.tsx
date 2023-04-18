@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { Slider, Button, CheckboxGroup } from '@/components/Elements';
 
-import { DogSizes, Furnishings, RoomPrice, RoomsFilters as RoomsFiltersType } from '../roomsTypes';
+import { DogSizes, Furnishings, RoomPrice, RoomsFilters as RoomsFiltersType } from '../types';
 
 import styles from './RoomsFilters.module.scss';
 import { dogSizesItems, furnishingsItems } from './roomsFiltersItems';

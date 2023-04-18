@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 
-import { composeImagePath } from '../roomsUtils';
+import { composeImagePath } from '../utils';
 
 import styles from './RoomGallery.module.scss';
 import RoomImageSmall from './RoomImageSmall';

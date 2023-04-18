@@ -1,17 +1,22 @@
-import { Room } from '@/components/Rooms/roomsTypes';
+import { Room } from '@/components/Rooms/types';
 import { SectionsWrapper } from '@/components/Sections';
-import { getRoomsData } from '@/helpers/dataAccess';
+import { Testimonial } from '@/components/Sections/types';
+import { getRoomsData, getTestimonialsData } from '@/helpers/dataAccess';
 
-export default function Home({ rooms }: { rooms: Room[] }) {
-  return <SectionsWrapper roomsData={rooms} />;
+type HomeProps = { rooms: Room[]; testimonials: Testimonial[] };
+
+export default function Home({ rooms, testimonials }: HomeProps) {
+  return <SectionsWrapper roomsData={rooms} testimonialsData={testimonials} />;
 }
 
 export async function getStaticProps() {
   const rooms = await getRoomsData();
+  const testimonials = await getTestimonialsData();
 
   return {
     props: {
       rooms,
+      testimonials,
     },
   };
 }

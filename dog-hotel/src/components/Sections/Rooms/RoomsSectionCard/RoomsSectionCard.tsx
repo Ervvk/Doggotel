@@ -2,8 +2,8 @@ import Image from 'next/image';
 import React from 'react';
 
 import { RoomOverview } from '@/components/Rooms/RoomOverview';
-import { Room } from '@/components/Rooms/roomsTypes';
-import { composeImagePath } from '@/components/Rooms/roomsUtils';
+import { Room } from '@/components/Rooms/types';
+import { composeImagePath } from '@/components/Rooms/utils';
 
 import styles from './RoomsSectionCard.module.scss';
 

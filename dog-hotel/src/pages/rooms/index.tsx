@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { RoomsLayout } from '@/components/Rooms';
-import { Room } from '@/components/Rooms/roomsTypes';
+import { Room } from '@/components/Rooms/types';
 import { getRoomsData } from '@/helpers/dataAccess';
 
 const Page = ({ rooms }: { rooms: Room[] }) => {

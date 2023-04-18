@@ -3,7 +3,7 @@ import React from 'react';
 import { Dialog, DialogProps } from '@/components/Elements';
 
 import { RoomsFilters } from '../RoomsFilters/RoomsFilters';
-import { RoomsFilters as RoomsFiltersType } from '../roomsTypes';
+import { RoomsFilters as RoomsFiltersType } from '../types';
 
 import styles from './RoomsFiltersDialog.module.scss';
 

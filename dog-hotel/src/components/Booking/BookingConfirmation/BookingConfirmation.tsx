@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Dialog } from '@/components/Elements';
 
-import { BookingDetails } from '../bookingTypes';
+import { BookingDetails } from '../types';
 
 import styles from './BookingConfirmation.module.scss';
 

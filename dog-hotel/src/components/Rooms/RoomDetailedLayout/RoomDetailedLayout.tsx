@@ -4,7 +4,7 @@ import { BookingTrigger } from '@/components/Booking';
 
 import { FurnishingsWidget } from '../FurnishingsWidget';
 import { RoomGallery } from '../RoomGallery';
-import { Room } from '../roomsTypes';
+import { Room } from '../types';
 
 import styles from './RoomDetailedLayout.module.scss';
 

@@ -5,8 +5,8 @@ import { Placeholder, Button } from '@/components/Elements';
 import RoomsCard from '../RoomsCard/RoomsCard';
 import { RoomsFilters } from '../RoomsFilters';
 import { RoomsFiltersDialog } from '../RoomsFiltersDialog';
-import { Room, RoomsFilters as RoomsFiltersType } from '../roomsTypes';
-import { composeTruthyValuesArray, isPriceInRange, initialFiltersState } from '../roomsUtils';
+import { Room, RoomsFilters as RoomsFiltersType } from '../types';
+import { composeTruthyValuesArray, isPriceInRange, initialFiltersState } from '../utils';
 
 import styles from './RoomsLayout.module.scss';
 

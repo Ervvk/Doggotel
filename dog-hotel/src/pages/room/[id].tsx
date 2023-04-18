@@ -2,7 +2,7 @@ import { GetStaticProps } from 'next';
 import React from 'react';
 
 import RoomDetailedLayout from '@/components/Rooms/RoomDetailedLayout/RoomDetailedLayout';
-import { Room } from '@/components/Rooms/roomsTypes';
+import { Room } from '@/components/Rooms/types';
 import { getRoomsData } from '@/helpers/dataAccess';
 
 const Page = ({ room }: { room: Room }) => {

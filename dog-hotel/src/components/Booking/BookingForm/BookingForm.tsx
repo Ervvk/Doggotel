@@ -4,8 +4,8 @@ import React, { FormEvent } from 'react';
 import { Button } from '@/components/Elements';
 import { yearFromToday, getIsoDate, currentDate } from '@/helpers/utils';
 
-import { BookingDetails } from '../bookingTypes';
-import { bookingValidation, composeFormData, defaultBookingDetails } from '../bookingUtils';
+import { BookingDetails } from '../types';
+import { bookingValidation, composeFormData, defaultBookingDetails } from '../utils';
 
 import styles from './BookingForm.module.scss';
 
