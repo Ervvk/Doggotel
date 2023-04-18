@@ -58,7 +58,6 @@ export const RoomsLayout = ({ roomsData }: RoomsLayoutProps) => {
   return (
     <section className={styles['rooms']}>
       <h1>Our rooms</h1>
-
       <div className={styles['rooms-content']}>
         <div className={styles['rooms-buttons-mobile']}>
           <div className={styles['rooms-button-mobile']}>

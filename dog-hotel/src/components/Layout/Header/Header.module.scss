@@ -1,8 +1,10 @@
 .header {
-  @extend .flex-between-center;
   position: fixed;
+  @extend .flex-between-center;
+
   height: 8rem;
   width: 100%;
+  max-width: 100vw;
   padding: var(--space-small) 20%;
   background-color: var(--color-element-light);
   z-index: 1000;

@@ -6,14 +6,18 @@ $layout-break-1: 780px;
   background-color: var(--color-primary);
   height: 45rem;
   width: 100%;
+  border-radius: var(--border-radius-small);
+  overflow: hidden;
   @include setBreakpoint($layout-break-1) {
     height: max-content;
     flex-direction: column;
+    border-radius: 0;
   }
 }
 
 .banner-graphic {
   @extend .flex-column;
+
   justify-content: flex-end;
   height: 45rem;
   min-width: 40rem;

@@ -7,8 +7,9 @@ $layout-break-1: 1350px;
 .rooms-content {
   @extend .flex-column;
   align-items: flex-end;
+  gap: var(--space-big);
   padding: var(--space-large);
-  gap: var(--space-medium);
+  padding-top: var(--space-big);
 }
 
 .rooms-elements {
@@ -26,6 +27,7 @@ $layout-break-1: 1350px;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-big);
   width: max-content;
+  min-width: 91rem;
   max-width: 95vw;
 
   @include setBreakpoint(950px) {

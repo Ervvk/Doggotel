@@ -2,9 +2,11 @@
   height: max-content;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .main {
   min-height: 92vh;
+  height: max-content;
   margin-top: 8rem;
 }

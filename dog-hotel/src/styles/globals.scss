@@ -1,5 +1,8 @@
 @import './variables.scss';
 
+#__next {
+  height: max-content;
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -30,8 +33,9 @@ html {
 
 html,
 body {
-  height: 100%;
+  height: max-content;
   max-width: 100vw;
+  overflow: auto;
 }
 
 *,
@@ -73,8 +77,8 @@ h6 {
 }
 #root,
 #__next {
+  height: max-content;
   isolation: isolate;
-  height: 100%;
 }
 
 h1 {

@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import RoomsCard from '@/components/Rooms/RoomsCard/RoomsCard';
 import { Room } from '@/components/Rooms/roomsTypes';
-//import { randomNumber } from '@/helpers/utils';
+import { randomNumber } from '@/helpers/utils';
 
 import RoomsSectionCard from '../RoomsSectionCard/RoomsSectionCard';
 
@@ -14,7 +14,12 @@ type RoomsSectionProps = {
 };
 
 export const RoomsSection = ({ rooms }: RoomsSectionProps) => {
-  //const activeRoomIndex = randomNumber(1, rooms.length - 1);
+  const [activeRoomIndex, setActiveRoomIndex] = useState(1);
+
+  useEffect(() => {
+    const randomIndex = randomNumber(1, rooms.length - 1);
+    setActiveRoomIndex(randomIndex);
+  }, []);
 
   return (
     <section className={styles['section']}>
@@ -30,10 +35,10 @@ export const RoomsSection = ({ rooms }: RoomsSectionProps) => {
             </Link>
           </span>
           <div className={styles['section-card-big']}>
-            <RoomsSectionCard activeRoom={rooms[0]} />
+            <RoomsSectionCard activeRoom={rooms[activeRoomIndex]} />
           </div>
           <div className={styles['section-card-small']}>
-            <RoomsCard {...rooms[0]} />
+            <RoomsCard {...rooms[activeRoomIndex]} />
           </div>
         </div>
         {/*

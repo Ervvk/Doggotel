@@ -1,8 +1,14 @@
 .placeholder {
+  margin-top: var(--space-large);
   @extend .flex-center-column;
   justify-self: center;
   grid-column: span 2;
   gap: var(--space-medium);
+
+  @include setBreakpoint(1350px) {
+    margin-top: 0;
+    grid-column: span 3;
+  }
 }
 
 .placeholder-title {
