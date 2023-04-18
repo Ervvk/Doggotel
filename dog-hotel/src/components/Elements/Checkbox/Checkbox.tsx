@@ -2,10 +2,9 @@ import * as RadixCheckbox from '@radix-ui/react-checkbox';
 import { CheckIcon } from '@radix-ui/react-icons';
 import React from 'react';
 
-import styles from './Checkbox.module.scss';
+import { composeAbsoluteBoolean } from '@/helpers/utils';
 
-const composeCheckBoolean = (checkValue: boolean | string) =>
-  checkValue === 'true' || checkValue === true;
+import styles from './Checkbox.module.scss';
 
 export type CheckboxItem = {
   key: string;
@@ -31,7 +30,7 @@ export const Checkbox = ({ item, onValueChange, currentValue }: CheckboxProps) =
         className={styles['checkbox-root']}
         id={item.key}
         checked={currentValue}
-        onCheckedChange={(value) => handleCheck(composeCheckBoolean(value))}
+        onCheckedChange={(value) => handleCheck(composeAbsoluteBoolean(value))}
       >
         <Indicator className={styles['checkbox-indicator']}>
           <CheckIcon />

@@ -24,7 +24,7 @@ const RoomDetailedLayout = ({ room }: { room: Room }) => {
         </div>
       </div>
       <p>
-        When booking a box/room for more than 7 days, there is a 25% discount for each subsequent
+        * When booking a box/room for more than 7 days, there is a 25% discount for each subsequent
         day.
       </p>
     </div>

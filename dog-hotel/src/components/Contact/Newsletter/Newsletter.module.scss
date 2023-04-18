@@ -5,13 +5,20 @@
 }
 
 .newsletter-content {
-  border-radius: var(--border-radius);
-  background-color: var(--color-element-dark);
-  padding: var(--space-medium);
+  @extend .flex-center;
   max-width: 98vw;
+  padding: var(--space-medium);
+  background-color: var(--color-element-dark);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
 }
 
 .newsletter-form {
   @extend .flex-center;
   gap: var(--space-small);
+}
+
+.newsletter-confirmation {
+  width: max-content;
+  color: var(--color-highlight);
 }

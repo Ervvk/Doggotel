@@ -51,7 +51,7 @@ export const BookingTrigger = ({ roomName }: BookingTriggerProps) => {
         onClick={openBookingDialog}
       />
       <BookingDialog
-        isDialogOpen={isDialogOpen}
+        isOpen={isDialogOpen}
         onClose={handleClose}
         onOpen={handleOpen}
         onValueChange={handleBookingDataChange}

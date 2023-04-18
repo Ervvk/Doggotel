@@ -1,11 +1,27 @@
 .card {
   height: max-content;
   padding: var(--space-big);
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 35rem;
+    height: 35rem;
+    background-image: url('/icons/toys-blurred.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -18rem;
+    right: -45rem;
+  }
 }
 
 .card-content {
   position: relative;
   width: max-content;
+  box-shadow: var(--shadow);
 }
 
 .card-description {
@@ -14,11 +30,11 @@
   top: 0;
   bottom: 0;
   right: -45rem;
-  padding: var(--space-big);
-  border-radius: var(--border-radius-small);
   width: 50rem;
   height: 30rem;
-  background-color: var(--color-element-light);
   margin: auto 0;
+  padding: var(--space-big);
+  border-radius: var(--border-radius-small);
+  background-color: var(--color-element-light);
   box-shadow: var(--shadow);
 }

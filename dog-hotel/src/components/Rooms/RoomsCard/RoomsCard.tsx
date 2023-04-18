@@ -25,8 +25,8 @@ const RoomsCard = (props: RoomsCardProps) => {
         <Image
           src={imagePath}
           alt={props.name}
-          width={310}
-          height={220}
+          width={330}
+          height={240}
           style={{ objectFit: 'cover' }}
         />
       </div>

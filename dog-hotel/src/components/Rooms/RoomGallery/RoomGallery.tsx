@@ -43,7 +43,7 @@ export const RoomGallery = ({ imagesDirectoryUrl }: RoomGalleryProps) => {
         alt={`Room image - maximized}`}
         width={620}
         height={350}
-        style={{ objectFit: 'cover' }}
+        style={{ objectFit: 'cover', maxHeight: '50vw', maxWidth: '95vw' }}
       />
       <div className={styles['images-minimized']}>{composeImages()}</div>
     </div>

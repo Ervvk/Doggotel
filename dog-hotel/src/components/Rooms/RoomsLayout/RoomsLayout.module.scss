@@ -1,20 +1,67 @@
+$layout-break-1: 1350px;
 .rooms {
   @extend .flex-center-column;
   margin-top: var(--space-big);
 }
 
 .rooms-content {
+  @extend .flex-column;
+  align-items: flex-end;
+  padding: var(--space-large);
+  gap: var(--space-medium);
+}
+
+.rooms-elements {
   @extend .flex;
   align-items: flex-start;
-  padding: var(--space-large);
   gap: var(--space-large);
+  width: max-content;
 }
 
 .rooms-grid {
   display: grid;
   justify-content: center;
+  justify-items: center;
 
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-big);
-  width: 98rem;
+  width: max-content;
+  max-width: 95vw;
+
+  @include setBreakpoint(950px) {
+    padding: 0 10vw;
+    width: 85vw;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-medium);
+  }
+  @include setBreakpoint(600px) {
+    max-width: 90vw;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--space-medium);
+  }
+}
+
+.rooms-filters {
+  margin-right: var(--space-big);
+
+  @include setBreakpoint($layout-break-1) {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+.rooms-buttons-mobile {
+  display: none;
+  width: 20rem;
+
+  @include setBreakpoint($layout-break-1) {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.rooms-button-mobile {
+  width: 25rem;
 }

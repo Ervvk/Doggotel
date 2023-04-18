@@ -1,18 +1,14 @@
 .section {
   @extend .flex-center-column;
-  background-image: url('/icons/paw-blurred.svg');
-  background-size: 20%;
-  background-repeat: no-repeat;
-  background-position: 0% 80%;
 }
 
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
+  gap: var(--space-big);
   width: max-content;
   margin: 0 auto;
-  gap: var(--space-big);
   margin-top: var(--space-large);
 
   @include setBreakpoint(1400px) {

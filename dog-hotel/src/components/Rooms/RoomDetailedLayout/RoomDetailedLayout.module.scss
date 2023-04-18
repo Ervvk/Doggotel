@@ -7,13 +7,20 @@
 
 .room {
   @extend .flex-center;
-  align-items: flex-start;
+  align-items: center;
   gap: var(--space-large);
+  @include setBreakpoint(1100px) {
+    flex-direction: column;
+  }
 }
 
 .room-details {
   @extend .flex-column;
   gap: var(--space-medium);
+
+  @include setBreakpoint(1100px) {
+    align-items: center;
+  }
 }
 
 .room-widgets {
@@ -28,5 +35,11 @@
 
 .room-description {
   width: 50rem;
+  max-width: 95vw;
   margin: var(--space-small) 0;
+
+  @include setBreakpoint(1100px) {
+    width: 60rem;
+    padding: var(--space-small);
+  }
 }

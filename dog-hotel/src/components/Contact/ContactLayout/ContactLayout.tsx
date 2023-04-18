@@ -13,6 +13,10 @@ export const ContactLayout = () => {
         <CustomMap />
         <Address />
       </div>
+      <p className={styles['contact-info']}>
+        We have free parking for guests at the resort. You only need to show your booking
+        confirmation!
+      </p>
     </div>
   );
 };

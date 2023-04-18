@@ -1,10 +1,19 @@
 .contact {
   @extend .flex-center-column;
-  margin-top: var(--space-medium);
+  padding: var(--space-big) var(--space-medium);
   gap: var(--space-large);
 }
 
 .contact-content {
   @extend .flex-center;
   gap: var(--space-large);
+  @include setBreakpoint(900px) {
+    flex-direction: column;
+  }
+}
+
+.contact-info {
+  color: var(--color-highlight);
+  max-width: 90vw;
+  text-align: center;
 }

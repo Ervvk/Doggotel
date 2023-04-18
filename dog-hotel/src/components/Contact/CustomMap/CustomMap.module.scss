@@ -1,10 +1,10 @@
 .map-wrapper {
+  height: 48rem;
+  width: 70rem;
+  max-width: 95vw;
+  overflow: hidden;
   border-radius: var(--border-radius-small);
   box-shadow: var(--shadow);
-  max-width: 100vw;
-  height: 50rem;
-  width: 70rem;
-  overflow: hidden;
 }
 
 #map {

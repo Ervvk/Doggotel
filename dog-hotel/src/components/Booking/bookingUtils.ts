@@ -1,3 +1,4 @@
+// radixUI form onSubmit returns entries, we convert it to an object
 export const composeFormData = (formEntries: FormData) => Object.fromEntries(formEntries);
 
 export const compareStayDates = (startDate: string, endDate: string) => endDate > startDate;
@@ -11,9 +12,15 @@ export const validatePhoneNumber = (phoneNumber: string) => {
   return phoneRegex.test(digits);
 };
 
-export const validateEndDate = (endDate: string, formEntries: FormData) => {
+const getStartDate = (formEntries: FormData) => {
   const formData = composeFormData(formEntries);
   const { startDate } = formData;
+  return startDate;
+};
+
+//The function is used to validate the endDate input in radixUi Form, we get the startDate from the current state of the form
+export const validateEndDate = (endDate: string, formEntries: FormData) => {
+  const startDate = getStartDate(formEntries);
   return compareStayDates(startDate.toString(), endDate);
 };
 

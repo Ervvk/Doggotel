@@ -10,6 +10,7 @@ import styles from './RoomsSectionCard.module.scss';
 type RoomsSectionCardProps = {
   activeRoom: Room;
 };
+
 const RoomsSectionCard = ({ activeRoom }: RoomsSectionCardProps) => {
   return (
     <div className={styles['card']}>

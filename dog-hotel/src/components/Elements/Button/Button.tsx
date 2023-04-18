@@ -20,7 +20,6 @@ export const Button = ({ title, icon, type, onClick, submit, formId }: ButtonPro
       type={submit ? 'submit' : 'button'}
       form={formId}
     >
-      <span></span>
       {!!title && <span className={styles['button-title']}>{title}</span>}
       {!!icon && (
         <span className={styles['button-icon']}>

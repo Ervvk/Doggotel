@@ -1,4 +1,4 @@
-$layout-break-1: 660px;
+$layout-break-1: 780px;
 
 .banner {
   display: flex;
@@ -45,9 +45,10 @@ $layout-break-1: 660px;
   align-items: flex-start;
   gap: var(--space-big);
   padding: var(--space-small);
+
   @include setBreakpoint($layout-break-1) {
     align-items: center;
-    padding: var(--space-medium);
+    padding: var(--space-big);
   }
 }
 

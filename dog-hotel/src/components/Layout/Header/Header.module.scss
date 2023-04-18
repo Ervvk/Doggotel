@@ -3,7 +3,14 @@
   position: fixed;
   height: 8rem;
   width: 100%;
-  padding: 1rem 20%;
+  padding: var(--space-small) 20%;
   background-color: var(--color-element-light);
   z-index: 1000;
+  @include setBreakpoint(600px) {
+    padding: 0 10vw;
+  }
+
+  @include setBreakpoint(420px) {
+    padding: 0 5vw;
+  }
 }

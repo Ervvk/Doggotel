@@ -20,6 +20,8 @@ export const CustomMap = () => {
         }}
         mapStyle="mapbox://styles/mapbox/streets-v9"
         mapboxAccessToken={process.env.MAPS}
+        scrollZoom={false}
+        keyboard={false}
       >
         <Marker
           longitude={hotelCoordinates.longitude}

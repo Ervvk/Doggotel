@@ -10,8 +10,12 @@
   height: max-content;
   box-shadow: var(--shadow);
   background-color: var(--color-element-light);
-  max-width: 35rem;
+  max-width: 33rem;
   width: 95vw;
+
+  @include setBreakpoint(600px) {
+    max-width: 35rem;
+  }
 }
 
 .card-content {

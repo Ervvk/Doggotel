@@ -19,3 +19,17 @@ export const composeTruthyValuesArray = (roomDetails: Room | RoomsFilters) => {
 
   return truthyEntries;
 };
+
+export const initialFiltersState = {
+  dogSizes: {
+    small: true,
+    medium: true,
+    big: true,
+  },
+  furnishings: {
+    toys: true,
+    blanket: true,
+    bed: true,
+  },
+  maxPrice: 100,
+};

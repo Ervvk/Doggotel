@@ -5,6 +5,12 @@
   padding: var(--space-big);
   background-color: var(--color-primary);
   border-radius: var(--border-radius-small);
+
+  @include setBreakpoint(1350px) {
+    visibility: visible;
+    justify-content: center;
+    width: 39rem;
+  }
 }
 
 .filters-form {

@@ -8,7 +8,7 @@ export const Address = () => {
       <address className={styles['address-wrapper']}>
         <div>
           <h4>Location</h4>
-          <p>Senatorska 92, Zabrze</p>
+          <p>Piekarska 221B, Zabrze</p>
         </div>
         <div>
           <h4>Working Hours</h4>
@@ -23,7 +23,7 @@ export const Address = () => {
         <div>
           <h4>Phone</h4>
           <p>
-            <a className={styles['address-link']}>(+48) 555-555-555</a>
+            <a className={styles['address-link']}>(+48) 506-655-945</a>
           </p>
         </div>
       </address>

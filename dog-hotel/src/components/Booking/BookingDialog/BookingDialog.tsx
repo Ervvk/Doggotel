@@ -1,29 +1,26 @@
 import React from 'react';
 
-import { Dialog } from '@/components/Elements';
+import { Dialog, DialogProps } from '@/components/Elements';
 
 import { BookingForm } from '../BookingForm';
 import { BookingDetails } from '../bookingTypes';
 
 import styles from './BookingDialog.module.scss';
 
-type BookingDialogProps = {
-  isDialogOpen: boolean;
-  onClose: () => void;
-  onOpen: () => void;
+interface BookingDialogProps extends DialogProps {
   onValueChange: (value: BookingDetails) => void;
   roomName: string;
-};
+}
 
 export const BookingDialog = ({
-  isDialogOpen,
+  isOpen,
   onClose,
   onOpen,
   onValueChange,
   roomName,
 }: BookingDialogProps) => {
   return (
-    <Dialog isOpen={isDialogOpen} onClose={onClose} onOpen={onOpen} title={`Book the ${roomName}`}>
+    <Dialog isOpen={isOpen} onClose={onClose} onOpen={onOpen} title={`Book the ${roomName}`}>
       <div className={styles['dialog-content']}>
         <BookingForm
           handleDialogClose={onClose}

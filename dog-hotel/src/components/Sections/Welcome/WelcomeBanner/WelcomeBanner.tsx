@@ -17,22 +17,16 @@ export const WelcomeBanner = () => {
       </div>
       <div className={styles['banner-content']}>
         <div className={styles['banner-heading']}>
-          <div className={styles['banner-heading']}>
-            <div className={styles['banner-heading-elements']}>
-              <p className={styles['banner-detail']}>Welcome To</p>
-              <h1>Doggotel</h1>
-              <p className={styles['banner-detail']}>Best Dog Hotel in Poland</p>
-            </div>
-            {
-              <Link href={'/rooms'} role="button" className={styles['banner-link']}>
-                <Button
-                  title={'Browse rooms'}
-                  icon={'/icons/icon-paw-light.svg'}
-                  type={'primary'}
-                />
-              </Link>
-            }
+          <div className={styles['banner-heading-elements']}>
+            <p className={styles['banner-detail']}>Welcome To</p>
+            <h1>Doggotel</h1>
+            <p className={styles['banner-detail']}>Best Dog Hotel in Poland</p>
           </div>
+          {
+            <Link href={'/rooms'} role="button" className={styles['banner-link']}>
+              <Button title={'Browse rooms'} icon={'/icons/icon-paw-light.svg'} type={'primary'} />
+            </Link>
+          }
         </div>
       </div>
     </div>

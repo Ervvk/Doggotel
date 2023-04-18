@@ -6,16 +6,17 @@
 }
 
 .dialog-content {
-  background-color: var(--color-element-light);
-  border-radius: 6px;
+  width: 90vw;
+  max-width: 50rem;
+  height: max-content;
+  max-height: 100vh;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90vw;
-  max-width: 50rem;
-  height: max-content;
   padding: var(--space-small);
+  border-radius: 6px;
+  background-color: var(--color-element-light);
   background-image: url('/icons/paw-blurred.svg');
   background-size: 17%;
   background-repeat: no-repeat;
@@ -33,16 +34,16 @@
 }
 
 .dialog-close {
-  width: 100%;
   @extend .flex;
   justify-content: flex-end;
+  width: 100%;
   padding: 0 var(--space-small);
 }
 
 .dialog-close-button {
-  font-size: 2rem;
   width: 2rem;
   height: 2rem;
+  font-size: 2rem;
   border: none;
   background: transparent;
   cursor: pointer;

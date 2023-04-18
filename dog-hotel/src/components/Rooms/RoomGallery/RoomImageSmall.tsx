@@ -15,7 +15,7 @@ const RoomImageSmall = ({ imageDirectoryUrl, imageNumber }: RoomImageProps) => {
       alt={`Room image - ${imageNumber}`}
       width={200}
       height={120}
-      style={{ objectFit: 'cover' }}
+      style={{ objectFit: 'cover', maxWidth: '31vw', maxHeight: '22vw' }}
     />
   );
 };
