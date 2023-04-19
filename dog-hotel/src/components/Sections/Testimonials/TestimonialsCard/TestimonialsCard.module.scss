@@ -24,7 +24,7 @@
 
 .card-details {
   @extend .flex-between;
-  margin-top: 1rem;
+  margin-top: var(--space-medium);
 
   &::after {
     content: '“';

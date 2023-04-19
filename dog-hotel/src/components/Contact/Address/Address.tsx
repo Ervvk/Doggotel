@@ -7,23 +7,27 @@ export const Address = () => {
     <div>
       <address className={styles['address-wrapper']}>
         <div>
-          <h4>Location</h4>
+          <b>Location</b>
           <p>Piekarska 221B, Zabrze</p>
         </div>
         <div>
-          <h4>Working Hours</h4>
+          <b>Working Hours</b>
           <p>Every day from 9:00 to 20:00</p>
         </div>
         <div>
-          <h4>E-mail</h4>
+          <b>E-mail</b>
           <p>
-            <a className={styles['address-link']}>service@doggotel.com</a>
+            <a href={'mailto:ervk.baranowski@gmail.com'} className={styles['address-link']}>
+              service@doggotel.com
+            </a>
           </p>
         </div>
         <div>
-          <h4>Phone</h4>
+          <b>Phone</b>
           <p>
-            <a className={styles['address-link']}>(+48) 506-655-945</a>
+            <a href={'tel:506-655-945'} className={styles['address-link']}>
+              (+48) 506-655-945
+            </a>
           </p>
         </div>
       </address>

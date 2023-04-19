@@ -5,14 +5,13 @@
 
 .list {
   @extend .flex;
-  gap: var(--space-big);
+  gap: var(--space-small);
   list-style: none;
-  padding: var(--space-small);
 }
 
 .link {
   @extend .link-unstyled;
-  padding: var(--space-small);
+  padding: var(--space-small) var(--space-medium);
   font-size: 16px;
   border-radius: var(--border-radius-small);
   transition: background-color 0.3s linear;

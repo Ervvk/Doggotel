@@ -1,15 +1,20 @@
+$layout-break-1: 1100px;
+
 .layout {
   @extend .flex-center-column;
   gap: var(--space-large);
   padding: var(--space-large);
   margin-top: var(--space-big);
+  @include setBreakpoint($layout-break-1) {
+    padding: var(--space-big);
+    margin-top: 0;
+  }
 }
 
 .room {
   @extend .flex-center;
-  align-items: center;
   gap: var(--space-large);
-  @include setBreakpoint(1100px) {
+  @include setBreakpoint($layout-break-1) {
     flex-direction: column;
   }
 }
@@ -18,7 +23,7 @@
   @extend .flex-column;
   gap: var(--space-medium);
 
-  @include setBreakpoint(1100px) {
+  @include setBreakpoint($layout-break-1) {
     align-items: center;
   }
 }
@@ -38,7 +43,7 @@
   max-width: 95vw;
   margin: var(--space-small) 0;
 
-  @include setBreakpoint(1100px) {
+  @include setBreakpoint($layout-break-1) {
     width: 60rem;
     padding: var(--space-small);
   }
