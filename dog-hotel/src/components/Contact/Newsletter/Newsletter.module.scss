@@ -21,4 +21,5 @@
 .newsletter-confirmation {
   width: max-content;
   color: var(--color-highlight);
+  @include setFontColor(--color-highlight);
 }

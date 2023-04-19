@@ -27,3 +27,8 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
+@mixin setFontColor($color) {
+  color: var($color);
+  -webkit-text-fill-color: var($color);
+}

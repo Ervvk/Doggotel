@@ -13,10 +13,10 @@
 .link {
   @extend .link-unstyled;
   padding: var(--space-small);
-  color: var(--color-font-primary);
   font-size: 16px;
   border-radius: var(--border-radius-small);
   transition: background-color 0.3s linear;
+  @include setFontColor(--color-font-primary);
 
   &:hover {
     background-color: var(--color-hover-secondary);

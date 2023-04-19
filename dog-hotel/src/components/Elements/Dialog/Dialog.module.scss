@@ -8,8 +8,8 @@
 .dialog-content {
   width: 90vw;
   max-width: 50rem;
-  height: max-content;
-  max-height: 100vh;
+  height: min-content;
+
   position: fixed;
   top: 50%;
   left: 50%;
@@ -37,6 +37,7 @@
   @extend .flex;
   justify-content: flex-end;
   width: 100%;
+
   padding: 0 var(--space-small);
 }
 

@@ -39,6 +39,7 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
+  @include setFontColor(--color-font-primary);
 }
 * {
   margin: 0;
@@ -85,4 +86,11 @@ h1 {
 
 h2 {
   font-size: 3.5rem;
+}
+
+input[type='date'] {
+  appearance: textfield;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  min-width: 95%;
 }

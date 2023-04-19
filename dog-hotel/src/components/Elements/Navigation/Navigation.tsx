@@ -25,7 +25,6 @@ export const Navigation = () => {
 
     navigationItems.forEach(({ href, id }) => {
       const arePathsMatching = matchPaths(pathname, href);
-
       if (arePathsMatching && href.length > 1) {
         setActiveItem(id.toString());
         isMatch = true;

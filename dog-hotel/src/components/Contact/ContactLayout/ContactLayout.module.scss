@@ -13,7 +13,7 @@
 }
 
 .contact-info {
-  color: var(--color-highlight);
+  @include setFontColor(--color-highlight);
   max-width: 90vw;
   text-align: center;
 }

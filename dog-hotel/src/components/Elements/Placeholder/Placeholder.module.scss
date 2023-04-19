@@ -1,6 +1,7 @@
 .placeholder {
-  margin-top: var(--space-large);
   @extend .flex-center-column;
+  margin-top: var(--space-large);
+
   justify-self: center;
   grid-column: span 2;
   gap: var(--space-medium);
@@ -13,5 +14,5 @@
 
 .placeholder-title {
   font-size: 2rem;
-  color: var(--color-element-primary);
+  @include setFontColor(--color-element-primary);
 }

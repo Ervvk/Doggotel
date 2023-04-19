@@ -30,7 +30,7 @@
 .room-details-price {
   font-weight: 700;
   font-size: 2rem;
-  color: var(--color-highlight);
+  @include setFontColor(--color-highlight);
 }
 
 .room-description {

@@ -1,8 +1,8 @@
 .form-root {
   @extend .flex-center-column;
-  gap: var(--space-medium);
+  gap: var(--space-small);
   width: 100%;
-  padding: var(--space-large) var(--space-medium);
+  padding: var(--space-big) var(--space-medium);
 }
 
 .form-field {
@@ -17,15 +17,15 @@
 }
 
 .form-label {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 35px;
 }
 
 .form-message {
-  font-size: 13px;
-  color: var(--color-warning);
+  font-size: 1.2rem;
   opacity: 0.8;
+  @include setFontColor(--color-warning);
 }
 
 .form-input,
@@ -38,8 +38,10 @@
   border: none;
   background-color: var(--color-primary);
   box-shadow: 0 0 0 1px var(--color-element-primary);
+  appearance: textfield;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
 }
-.form-input:hover,
 .textarea:hover {
   box-shadow: 0 0 0 1px black;
 }
@@ -49,8 +51,8 @@
 }
 
 .form-input {
-  padding: 0 10px;
-  height: 4.5rem;
+  padding: 0 var(--space-small);
+  height: 4rem;
   line-height: 1;
   border-radius: var(--border-radius-small);
 }
