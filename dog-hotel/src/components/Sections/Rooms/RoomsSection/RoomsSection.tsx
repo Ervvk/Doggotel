@@ -19,7 +19,7 @@ export const RoomsSection = ({ rooms }: RoomsSectionProps) => {
   useEffect(() => {
     const randomIndex = randomNumber(1, rooms.length - 1);
     setActiveRoomIndex(randomIndex);
-  }, []);
+  }, [rooms.length]);
 
   return (
     <section className={styles['section']}>

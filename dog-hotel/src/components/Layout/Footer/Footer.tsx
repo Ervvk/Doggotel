@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import React from 'react';
 
 import { Address, Newsletter } from '@/components/Contact';
@@ -16,10 +15,7 @@ export const Footer = () => {
       <div className={styles['footer-legal']}>
         <p> © This website was created by Eryk Baranowski</p>
         <p>
-          <span>
-            {' '}
-            <Link href="">Full sources list</Link>
-          </span>
+          <span> </span>
         </p>
       </div>
     </footer>
